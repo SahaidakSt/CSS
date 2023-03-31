@@ -1,7 +1,61 @@
+:root {
+  background: purple;
+}
+
 html {
   max-width: 720px;
+
+  background: blue;
 }
 
 body {
   background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color:green;
+}
+h1 {
+  color: blue;
+}
+.box {
+  background:#d1c7c7 ;
+  ;
+}
+
+h1, 
+h2#user, 
+button.button#button{
+  color: green;
+}
+#user,
+.user {
+  color: blue;
+}
+/* .button { background: red;} */
+
+#box >p {
+  color: paleturquoise;
+}
+
+/* .user-last {
+  color: palevioletred;
+}  замінимо */
+footer > .user,
+
+footer>h1 {
+  color: palevioletred;
+} 
+footer em {
+  color: palevioletred;
+} 
+h1 + p {
+  background: black;
+}
+h1 ~ p {  /* Сусідський селектор */
+  background: rgb(92, 9, 9);
 }
