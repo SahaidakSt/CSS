@@ -60,7 +60,6 @@ h1 + p {
 
       закоментовано код урока 1*/
 
-
 .card-dark {
   background: #e6e2e2;
 }
@@ -76,28 +75,32 @@ h1 + p {
 .item:last-child {
   color: blueviolet;
 }
-.item:only-child {  /*одиничний*/
+.item:only-child {
+  /*одиничний*/
   color: red;
 }
-.item:first-of-type { /* першим з'являється по типу*/
+.item:first-of-type {
+  /* першим з'являється по типу*/
   color: aqua;
-} 
-.item:last-of-type { /* останнім з'являється по типу*/
+}
+.item:last-of-type {
+  /* останнім з'являється по типу*/
   color: rgb(23, 79, 79);
-} 
-.item:only-of-type { /* одиничний по типу*/
+}
+.item:only-of-type {
+  /* одиничний по типу*/
   color: red;
-} 
-.item:nth-child(3n+1){
+}
+.item:nth-child(3n + 1) {
   color: yellowgreen;
 }
-.item:nth-last-child(3n+1){
+.item:nth-last-child(3n + 1) {
   color: rgb(26, 37, 3);
 }
-.item:nth-of-type(2){
+.item:nth-of-type(2) {
   color: blue;
 }
-.item:nth-last-of-type(2){
+.item:nth-last-of-type(2) {
   color: wheat;
 }
 /* p:not(.item) {
@@ -109,4 +112,50 @@ h1 + p {
 p:empty {
   height: 10px;
   background: red;
+}
+.input-dark {
+  background: #c7bdbd;
+}
+.input-dark[required] {
+  background: #c69090;
+}
+.input-dark[type='number'] {
+  background: #04da20;
+}
+.small-img[alt~='small'] {
+  height: 500px;
+}
+a[rel~='external'] {
+  color: green;
+}
+button[class|='btn'] {
+  background: rgb(231, 205, 205);
+}
+a[class^='btn'] {
+  background: rgb(235, 129, 129);
+}
+a[class*='btn'] {
+  background: rgb(235, 129, 129);
+}
+a[class$='big'] {
+  background: rgb(18, 46, 189);
+}
+.btn::first-letter {
+  color: red;
+}
+.big-text::first-line {
+  color: red;
+}
+.input-dark::placeholder {
+  color: green;
+}
+.big-text::before,
+.big-text::after {
+  content: '$$$';
+  color: green;
+}
+.before-after::before,
+.before-after::after {
+  content: '$$$';
+  color: green;
 }
