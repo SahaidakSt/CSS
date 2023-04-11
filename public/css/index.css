@@ -159,3 +159,83 @@ a[class$='big'] {
   content: '$$$';
   color: green;
 }
+
+/* ....................................Selectors part 4 */
+
+#test:target {
+  color: red;
+}
+
+.link:link {
+  color: red;
+}
+.link:hover {
+  color: green;
+}
+.card:hover {
+  background: green;
+}
+
+.card:active {
+  color: purple;
+}
+
+input {
+  background-color: gray;
+}
+input:focus {
+  background-color: red;
+}
+.card:focus-within {
+  background-color: red;
+}
+.card:lang(en) {
+  background: rgb(245, 177, 177);
+}
+.card:lang(en) > span::after {
+  content: ' (en)';
+}
+button {
+  background-color: greenyellow;
+}
+button:enabled {
+  background-color: #04da20;
+}
+button:disabled {
+  background-color: aqua;
+}
+.inp:read-write {
+  background-color: blue;
+}
+.inp:read-only {
+  background-color: red;
+}
+
+input[type='checkbox']:checked ~ span {
+  background: red;
+}
+.valid:valid {
+  background: yellow;
+}
+.valid:invalid {
+  background: rebeccapurple;
+}
+.valid:optional {
+  background: green;
+}
+.numeber:focus {
+  background: grey;
+}
+.number:out-of-range {
+  background: rgb(114, 62, 62);
+}
+.number:in-range {
+  background: green;
+}
+.number:invalid {
+  background: yellow;
+}
+
+input:placeholder-shown ~ span {
+  background: pink;
+}
