@@ -1,241 +1,80 @@
-/* :root {
-  background: purple;
-}
-
-html {
-  max-width: 720px;
-
-  background: blue;
-}
-
-body {
-  background: #fff;
-}
-
-* {
-  color: red;
-}
-
-h1 {
-  color:green;
-}
-h1 {
-  color: blue;
-}
-.box {
-  background:#d1c7c7 ;
-  ;
-}
-
-h1, 
-h2#user, 
-button.button#button{
-  color: green;
-}
-#user,
-.user {
-  color: blue;
-}
-.button { background: red;}
-
-#box >p {
-  color: paleturquoise;
-}
-
-/* .user-last {
-  color: palevioletred;
-}  замінимо */
-/* footer > .user,
-
-footer>h1 {
-  color: palevioletred;
-} 
-footer em {
-  color: palevioletred;
-} 
-h1 + p {
-  background: black;
+/* .card > p {
+  background: rgb(64, 0, 255);
+  color: rgba(251, 255, 0, 0.3);
 } */
-/* 
 
-      закоментовано код урока 1*/
-
-.card-dark {
-  background: #e6e2e2;
-}
-.item {
+.card > p {
   color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 0.5px blue;
 }
-/* .item-first {
-  color: blue;
+p:focus,
+p:active,
+p:hover {
+  -webkit-text-fill-color: yellow;
+  -webkit-text-stroke: 0.5px rgb(255, 81, 0);
+  direction: rtl;
+}
+/* #test {
+  color: initial;
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke: initial;
 } */
-.item:first-child {
-  color: blue;
-}
-.item:last-child {
-  color: blueviolet;
-}
-.item:only-child {
-  /*одиничний*/
+/* .card {
   color: red;
-}
-.item:first-of-type {
-  /* першим з'являється по типу*/
-  color: aqua;
-}
-.item:last-of-type {
-  /* останнім з'являється по типу*/
-  color: rgb(23, 79, 79);
-}
-.item:only-of-type {
-  /* одиничний по типу*/
-  color: red;
-}
-.item:nth-child(3n + 1) {
-  color: yellowgreen;
-}
-.item:nth-last-child(3n + 1) {
-  color: rgb(26, 37, 3);
-}
-.item:nth-of-type(2) {
-  color: blue;
-}
-.item:nth-last-of-type(2) {
-  color: wheat;
-}
-/* p:not(.item) {
-  color: whitesmoke;
 } */
-.item:not(p) {
-  color: rgb(207, 190, 190);
-}
-p:empty {
-  height: 10px;
-  background: red;
-}
-.input-dark {
-  background: #c7bdbd;
-}
-.input-dark[required] {
-  background: #c69090;
-}
-.input-dark[type='number'] {
-  background: #04da20;
-}
-.small-img[alt~='small'] {
-  height: 500px;
-}
-a[rel~='external'] {
-  color: green;
-}
-button[class|='btn'] {
-  background: rgb(231, 205, 205);
-}
-a[class^='btn'] {
-  background: rgb(235, 129, 129);
-}
-a[class*='btn'] {
-  background: rgb(235, 129, 129);
-}
-a[class$='big'] {
-  background: rgb(18, 46, 189);
-}
-.btn::first-letter {
+/* #test {
+  color: inherit;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
+} */
+/* .card {
   color: red;
-}
-.big-text::first-line {
-  color: red;
-}
-.input-dark::placeholder {
-  color: green;
-}
-.big-text::before,
-.big-text::after {
-  content: '$$$';
-  color: green;
-}
-.before-after::before,
-.before-after::after {
-  content: '$$$';
-  color: green;
-}
+} */
+/* #test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+} */
 
-/* ....................................Selectors part 4 */
+/* writing-mode */
 
-#test:target {
-  color: red;
-}
+/* #test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+  /* writing-mode: horizontal-tb; 
+  /* writing-mode: vertical-rl; 
+  /* writing-mode: vertical-lr; 
+} */
 
-.link:link {
-  color: red;
+/* text-align */
+#test {
+  color: unset;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+  /* writing-mode: vertical-lr; */
+  text-align: right;
+  text-align: center;
+  text-align: justify;
 }
-.link:hover {
-  color: green;
+span {
+  text-align: left;
+  text-transform: capitalize;
+  /* text-transform: uppercase; */
+  /* text-transform: lowercase; */
+  text-decoration: underline dotted red;
+  text-decoration-color: blue;
+  text-decoration-line: overline;
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-style: double;
+  text-decoration-style: dashed;
+  text-decoration-style: wavy;
 }
-.card:hover {
-  background: green;
-}
-
-.card:active {
-  color: purple;
-}
-
-input {
-  background-color: gray;
-}
-input:focus {
-  background-color: red;
-}
-.card:focus-within {
-  background-color: red;
-}
-.card:lang(en) {
-  background: rgb(245, 177, 177);
-}
-.card:lang(en) > span::after {
-  content: ' (en)';
-}
-button {
-  background-color: greenyellow;
-}
-button:enabled {
-  background-color: #04da20;
-}
-button:disabled {
-  background-color: aqua;
-}
-.inp:read-write {
-  background-color: blue;
-}
-.inp:read-only {
-  background-color: red;
-}
-
-input[type='checkbox']:checked ~ span {
-  background: red;
-}
-.valid:valid {
-  background: yellow;
-}
-.valid:invalid {
-  background: rebeccapurple;
-}
-.valid:optional {
-  background: green;
-}
-.numeber:focus {
-  background: grey;
-}
-.number:out-of-range {
-  background: rgb(114, 62, 62);
-}
-.number:in-range {
-  background: green;
-}
-.number:invalid {
-  background: yellow;
-}
-
-input:placeholder-shown ~ span {
-  background: pink;
+pre {
+  tab-size: 1;
+  letter-spacing: normal;
+  /* letter-spacing: 10px; */
+  letter-spacing: 0.5em;
 }
