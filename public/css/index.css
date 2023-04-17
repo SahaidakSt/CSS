@@ -66,15 +66,43 @@ span {
   text-decoration: underline dotted red;
   text-decoration-color: blue;
   text-decoration-line: overline;
-  text-decoration-line: line-through;
-  text-decoration-style: solid;
-  text-decoration-style: double;
-  text-decoration-style: dashed;
-  text-decoration-style: wavy;
+  /* text-decoration-line: line-through; */
+  /* text-decoration-style: solid; */
+  /* text-decoration-style: double; */
+  /* text-decoration-style: dashed; */
+  /* text-decoration-style: wavy; */
 }
 pre {
   tab-size: 1;
   letter-spacing: normal;
   /* letter-spacing: 10px; */
   letter-spacing: 0.5em;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  font-display: swap;
+}
+span {
+  font-size: larger;
+  font-weight: lighter;
+  font-style: normal;
+  font-style: italic;
+  /* font-style: oblique; */
+}
+.test {
+  display: none;
+}
+.block {
+  display: block;
+  background: rgb(247, 245, 245);
+
+  margin: min-content;
+
+  min-width: min-content;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: max-content;
 }
