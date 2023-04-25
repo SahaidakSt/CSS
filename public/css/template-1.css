@@ -146,3 +146,52 @@
 h1 {
   text-shadow: 5px 5px 9px black;
 }
+/* .plans_card:nth-child(2) > .card { */
+.plans_card:nth-child(2) {
+  /* background: red; */
+  /* display: none; */
+  visibility: hidden;
+}
+.hero_text {
+  background: grey;
+  /* width: 200px; */
+  /* height: 100px; */
+  /* overflow: hidden; */
+  /* overflow: overlay; */
+
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+
+  /* text-overflow: ellipsis; */
+  /* white-space: pre; */
+  /* white-space: pre; */
+  /* white-space: pre-wrap; */
+  /* white-space: pre-line; */
+  /* white-space: break-spaces; */
+  max-width: 200px;
+  /* width: min-content; */
+  width: 200;
+  /* word-break: break-all; */
+  /* word-break: keep-all; */
+  /* word-break: break-word; */
+  hyphens: manual;
+  word-spacing: 4px;
+
+  /* разом */
+  overflow: auto;
+  resize: both;
+}
+
+.hero_title {
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+  height: 65px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.overflow {
+  /* overflow-wrap: break-word; */
+  overflow-wrap: anywhere;
+}
