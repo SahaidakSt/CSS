@@ -168,9 +168,9 @@ h1 {
   /* white-space: pre-wrap; */
   /* white-space: pre-line; */
   /* white-space: break-spaces; */
-  max-width: 200px;
+  /* max-width: 200px; */
   /* width: min-content; */
-  width: 200;
+  /* width: 200; */
   /* word-break: break-all; */
   /* word-break: keep-all; */
   /* word-break: break-word; */
@@ -193,5 +193,65 @@ h1 {
 }
 .overflow {
   /* overflow-wrap: break-word; */
-  overflow-wrap: anywhere;
+  /* overflow-wrap: anywhere; */
+}
+
+/* _________15 Робота з фоном */
+
+/* body { */
+/* background: red; */
+/* background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    #7696ae 0%,
+    rgba(217, 217, 217, 0) 100%
+  ); */
+/* background-image: url('/img/test.png');
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+  background-repeat: space;
+  background-repeat: round;
+} */
+.page {
+  /* background-color: rgba(190, 112, 112, 0); */
+  /* background-color: transparent; */
+
+  /* background-image: url('/img/test2.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-position: 50% 50%;
+  background-position: center;
+
+  background-attachment: fixed;
+
+  background-size: contain;
+  background-size: cover; */
+}
+.hero_text {
+  /* background-image: url('/img/test2.png');
+  background-attachment: fixed;
+  background-attachment: local;
+  height: 50px;
+  overflow: auto; */
+  /* background-color: transparent; */
+  /* background-image: url('/img/test2.png'); */
+  /* border: 20px solid transparent; */
+  padding: 40px;
+  color: green;
+  /* color: transparent; */
+  /* background-clip: padding-box; */
+  /* background-clip: text;
+  -webkit-background-clip: text;*/
+  /* background-origin: border-box;
+  background-origin: padding-box;
+  background-origin: content-box;
+  background-repeat: no-repeat;*/
+  border-image-source: url('/img/test2.png');
+  border-image-width: 10px;
+  border-image-width: auto;
+  border-image-width: 10% 10%;
+  border-image-slice: 10% 10%;
+  border-image-repeat: stretch;
+  border-image-repeat: round;
+  /* border-image-repeat: space; */
+  border-image-outset: 60px;
 }
